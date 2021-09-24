@@ -95,4 +95,4 @@ git remote -v   # 원격저장소 목록 조회
 	git pull [원격저장소이름] [브랜치명]   # git pull origin master (예시)
 
 
-# 3. 중요 명령어
+# 3. Branch (중요)
