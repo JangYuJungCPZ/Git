@@ -14,5 +14,4 @@ Git 기본 명령어
 	git status
 	git status -s
 
-* 
 # 2. 원격환경 명령어 (사용전 신중히)
