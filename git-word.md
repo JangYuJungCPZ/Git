@@ -11,6 +11,19 @@ Git 기본 명령어
 # Git원리
 > ![Alt text](./img/993CCF4B5F17C75211.png)
 
+# 0. 한번만 사용하는 명령어 / 자주사용하는 명령어 (상세설명은 뒤로)
+## 0-1. 한번만
+> 1. git init 또는 git clone
+> 2. git remote
+## 0-2. 자주
+> 1. git add
+> 2. git commit
+> 3. git push
+> 4. git log
+> 5. git branch
+> 6. git checkout
+> 7. git merge
+> 
 # 1. 로컬환경 명령어
 ## 1-1. status
 > * Git 저장소의 상태를 알려주는 명령
@@ -71,5 +84,7 @@ git remote -v   # 원격저장소 목록 조회
 ### 2-3-2. fetch
 
 ### 2-3-3. pull
-> * pull = fetch + merge(병합)
+> * pull = fetch(불러오기) + merge(병합)    
+> 로컬 소스코드에 원격저장소 소스코드를 덮어씌우는데, 양쪽의 변경사항을 전부 합쳐서 저장합니다.    
+
 # 3. 중요 명령어
