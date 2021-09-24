@@ -11,8 +11,10 @@ Git 기본 명령어
 # 1. 로컬환경 명령어 (자유롭게 사용가능)
 * Git 저장소의 상태를 알려주는 명령 (-s : 간략화)
 
-	git status
-
-	git status -s
+<pre>
+<code>
+git status
+</code>
+</pre>
 
 # 2. 원격환경 명령어 (사용전 신중히)
