@@ -6,8 +6,8 @@ Git 설치 및 초기 세팅법
 
 ##### 예시 코드는 (예시)라고 달아두었습니다. 해당부분은 설정하신 환경에 맞게 변경해주세요.
 
-# 간단 Git원리 이해
-> 
+# Git원리
+> ![Alt text](./img/993CCF4B5F17C75211.png)
 
 # 1. Git 설치
 > 1. http://git-scm.com/downloads
