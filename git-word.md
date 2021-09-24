@@ -12,22 +12,26 @@ Git 기본 명령어
 > ![Alt text](./img/993CCF4B5F17C75211.png)
 
 # 1. 로컬환경 명령어
-> * Git 저장소의 상태를 알려주는 명령 [status]
+### 1-1. status
+> * Git 저장소의 상태를 알려주는 명령
 
 	git status   #전체
 	git status -s   #간략화
 
-> * Git 저장소 생성(초기화) [init]    
+### 1-2. init
+> * Git 저장소 생성(초기화)    
 > 원하는 경로의 원하는 폴더에 자유롭게 저장소 생성가능(C 바로아래에 폴더 생성을 추천합니다.)
 
 	git init
 
-> * 스테이지에 추가하는 명령 [add]    
+### 1-3. add
+> * 스테이지에 추가하는 명령    
 > 새로 생성한 파일을 스테이지에 추가하고 싶다면 반드시 실행해야합니다.
 
 	git add 파일명.php #(예시)
 
-> * 로컬저장소에 올리는 명령 [commit]
+### 1-4. commit
+> * 로컬저장소에 올리는 명령
 <pre>
 <code>
 git commit    #스테이지에 있는 (add해서 올린) 파일들을 전체 커밋하는 명령어
@@ -39,7 +43,8 @@ git commit -m "코멘트"   #커밋할때 코멘트를 달아 어떤 작업내�
 </code>
 </pre>
 # 2. 원격환경 명령어 (사용전 신중히)
-> * 원격저장소 연결 [remote]
+### 2-1. remote
+> * 원격저장소 연결
 <pre>
 <code>
 git remote add origin https://github.com/JangYuJungCPZ/Git.git    #git remote add [원격저장소이름] [원격저장소주소]
@@ -47,12 +52,14 @@ git remote add origin https://github.com/JangYuJungCPZ/Git.git    #git remote ad
 git remote -v   #원격저장소 목록 조회
 </code>
 </pre>
-> * 원격저장소에 업로드 [push]    
+### 2-2. push
+> * 원격저장소에 업로드    
 > 현재 브랜치(원격용 작업 공간)에서 새로 생성한 커밋들을 원격저장소에 업로드    
 > fatal: The current branch master has no upstream branch. 오류가 날 경우 git push -u [원격저장소이름] [브랜치명] 의 명령어로 업스트림 지정
 
 	git push [원격저장소이름] [브랜치명] # 통상 첫번째 원격저장소이름은 origin으로 등록합니다.(remote 할때)
 
+### 2-3. clone / pull / fetch
 > * 원격저장소에서 가져오기 [clone / pull / fetch]
 
 # 3. 중요 명령어
