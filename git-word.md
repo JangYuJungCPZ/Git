@@ -15,8 +15,8 @@ Git 기본 명령어
 ## 1-1. status
 > * Git 저장소의 상태를 알려주는 명령
 
-	git status   #전체
-	git status -s   #간략화
+	git status   # 전체
+	git status -s   # 간략화
 
 ## 1-2. init
 > * Git 저장소 생성(초기화)    
@@ -28,17 +28,17 @@ Git 기본 명령어
 > * 스테이지에 추가하는 명령    
 > 새로 생성한 파일을 스테이지에 추가하고 싶다면 반드시 실행해야합니다.
 
-	git add 파일명.php #(예시)
+	git add 파일명.php # (예시)
 
 ## 1-4. commit
 > * 로컬저장소에 올리는 명령
 <pre>
 <code>
-git commit    #스테이지에 있는 (add해서 올린) 파일들을 전체 커밋하는 명령어
+git commit    # 스테이지에 있는 (add해서 올린) 파일들을 전체 커밋하는 명령어
 
-git commit -a    #add 명령어를 생략하고 바로 워킹트리(일반적으로 작업하는 로컬폴더) -> 스테이지 -> 로컬저장소로 업로드할때 사용
+git commit -a    # add 명령어를 생략하고 바로 워킹트리(일반적으로 작업하는 로컬폴더) -> 스테이지 -> 로컬저장소로 업로드할때 사용
 
-git commit -m "코멘트"   #커밋할때 코멘트를 달아 어떤 작업내용인지 로그를 남깁니다. (규칙에 따라 남기기) (**제일 많이 사용)
+git commit -m "코멘트"   # 커밋할때 코멘트를 달아 어떤 작업내용인지 로그를 남깁니다. (규칙에 따라 남기기) (**제일 많이 사용)
 
 </code>
 </pre>
@@ -47,9 +47,9 @@ git commit -m "코멘트"   #커밋할때 코멘트를 달아 어떤 작업내�
 > * 원격저장소 연결
 <pre>
 <code>
-git remote add origin https://github.com/JangYuJungCPZ/Git.git    #git remote add [원격저장소이름] [원격저장소주소]
+git remote add origin https://github.com/JangYuJungCPZ/Git.git    # git remote add [원격저장소이름] [원격저장소주소]
 
-git remote -v   #원격저장소 목록 조회
+git remote -v   # 원격저장소 목록 조회
 </code>
 </pre>
 ## 2-2. push
@@ -59,11 +59,17 @@ git remote -v   #원격저장소 목록 조회
 
 	git push [원격저장소이름] [브랜치명] # 통상 첫번째 원격저장소이름은 origin으로 등록합니다.(remote 할때)
 
-## 2-3. clone / pull / fetch
+## 2-3. clone / fetch / pull
 > * 원격저장소에서 가져오기
 ### 2-3-1. clone
 > * 로컬 또는 원격저장소를 클론으로 복제할때 사용.    
 해당 명령어는 기존에 작업한 내용을 병합하지 않고 그대로 가져오기에 프로젝트 시작전 세팅시 처음 불러올때 사용합니다.
 
+	git clone https://github.com/JangYuJungCPZ/Git.git   # git clone <저장소 주소> (예시)
+	git clone https://github.com/JangYuJungCPZ/Git.git Git2   # git clone <저장소 주소> [새로운 폴더명] (예시)
 
+### 2-3-2. fetch
+
+### 2-3-3. pull
+> * pull = fetch + merge(병합)
 # 3. 중요 명령어
