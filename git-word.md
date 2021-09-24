@@ -40,6 +40,7 @@ git commit -m "코멘트"   #커밋할때 코멘트를 달아 어떤 작업내�
 </pre>
 # 2. 원격환경 명령어 (사용전 신중히)
 > * 원격저장소 연결 [remote]
+<pre>
 <code>
 git remote add origin https://github.com/JangYuJungCPZ/Git.git    #git remote add [원격저장소이름] [원격저장소주소]
 
@@ -52,6 +53,6 @@ git remote -v   #원격저장소 목록 조회
 
 	git push [원격저장소이름] [브랜치명] # 통상 첫번째 원격저장소이름은 origin으로 등록합니다.(remote 할때)
 
-> * 원격저장소에서 다운로드 [fetch / pull]
+> * 원격저장소에서 가져오기 [clone / pull / fetch]
 
 # 3. 중요 명령어
