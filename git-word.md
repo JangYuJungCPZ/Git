@@ -88,7 +88,7 @@ git remote -v   # 원격저장소 목록 조회
 
 	git fetch [원격저장소이름] [브랜치명]   # git fetch origin master (예시)
 
-### 2-3-3. pull
+### 2-3-3. pull (**많이 사용)
 > * pull = fetch(불러오기) + merge(병합)    
 > 로컬 소스코드에 원격저장소 소스코드를 덮어씌우는데, 양쪽의 변경사항을 전부 합쳐서 저장합니다.    
 
