@@ -50,3 +50,4 @@ Git 설치 및 초기 세팅법
 	git remote add origin https://github.com/JangYuJungCPZ/Git.git (예시)
 
 > 10. 원격 설정 완료
+> * 주의 : 처음 원격저장소에 수정한 소스코드를 올릴때 (push) 로그인창이 뜹니다. 로그인 진행해주세요.
