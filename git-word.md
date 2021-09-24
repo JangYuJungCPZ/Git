@@ -82,9 +82,17 @@ git remote -v   # 원격저장소 목록 조회
 	git clone https://github.com/JangYuJungCPZ/Git.git Git2   # git clone <저장소 주소> [새로운 폴더명] (예시)
 
 ### 2-3-2. fetch
+> * 원격저장소 소스코드를 불러와 로컬저장소(커밋히스토리공간)에 생성    
+> 이후 merge를 해주면 pull과 동일한 명령이 실행됩니다.    
+> 바로 병합이 아니라 따로 확인해야하거나 별도의 작업을 진행해야할때 주로 사용합니다.
+
+	git fetch [원격저장소이름] [브랜치명]   # git fetch origin master (예시)
 
 ### 2-3-3. pull
 > * pull = fetch(불러오기) + merge(병합)    
 > 로컬 소스코드에 원격저장소 소스코드를 덮어씌우는데, 양쪽의 변경사항을 전부 합쳐서 저장합니다.    
+
+	git pull [원격저장소이름] [브랜치명]   # git pull origin master (예시)
+
 
 # 3. 중요 명령어
