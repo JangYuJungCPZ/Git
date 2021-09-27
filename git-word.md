@@ -11,7 +11,7 @@ Git 기본 명령어
 # Git원리
 > ![Alt text](./img/993CCF4B5F17C75211.png)
 
-# 0. 한번만 사용하는 명령어 / 자주사용하는 명령어 (상세설명은 뒤로)
+# 0. 한번만 사용하는 명령어 / 자주사용하는 명령어
 ## 0-1. 한번만
 > 1. git init 또는 git clone
 > 2. git remote
@@ -96,3 +96,31 @@ git remote -v   # 원격저장소 목록 조회
 
 
 # 3. Branch (중요)
+## 3-0. HEAD
+> * 현재 작업중인 브랜치를 가리킵니다. (즉, 현재 작업중인 브랜치의 커밋을 가리킵니다.)
+> * 모든 작업은 HEAD가 가리키는 브랜치에서 이루어집니다. HEAD의 위치를 주의해주세요.
+## 3-1. branch
+> * 브랜치 조회/생성하기
+
+	git branch  # 로컬 저장소의 브랜치 목록 조회 -v 옵션 사용시 마지막 커밋도 함께 표시합니다.
+	git branch [브랜치이름] [커밋체크섬]  # 새로운 브랜치 생성(브랜치이름으로) 커밋체크섬을 주지 않으면 HEAD로 부터 브랜치 생성합니다. # git branch newbranch master
+	git branch -f [브랜치이름] [커밋체크섬]  # 이미 있는 브랜치를 다른 커밋으로 옮기고 싶을때 사용합니다. # git branch -f newbranch2 master 
+	git branch -d [브랜치이름]  # 특정 브랜치를 삭제할때 사용 (HEAD 브랜치와 병합되지 않은 브랜치는 삭제 불가)
+	git branch -D [브랜치이름]  # 브랜치를 강제로 삭제하는 명령 (매우 조심해서 사용)
+
+## 3-2. checkout
+> * 브랜치로 체크아웃 (HEAD를 옮김)    
+> * 작업하고자 하는 브랜치로 체크아웃 후 작업해야합니다.
+
+	git checkout [브랜치이름]  # 특정브랜치로 체크아웃합니다. # git checkout newbranch
+	git checkout -b [브랜치이름] [커밋체크섬]  # 특정 커밋에서 브랜치를 새로 생성하고 동시에 체크아웃합니다. 자주사용합니다. # git checkout -b newbranch3 master
+
+## 3-3. merge
+> * 병합
+
+	git merge [대상 브랜치]  # 현재 브랜치(HEAD)와 대상 브랜치를 병합할때 사용합니다. 병합커밋(merge commit)이 새로 생기는 경우가 많습니다.
+
+## 3-4. rebase
+> * 재배치
+
+	git rebasc [대상 브랜치]  # 내 브랜치의 커밋들을 대상 브랜치에 재배치합니다. (꼬일 수 있음 조심해서 사용)
