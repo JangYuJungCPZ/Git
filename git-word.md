@@ -140,12 +140,3 @@ git remote -v   # 원격저장소 목록 조회
 
 	git tag -a -m "메세지" [태그이름] [브랜치]  # 주석이 있는 태그생성. 메시지와 태그이름은 필수이고 브랜치명은 생각하면 HEAD에 생성합니다. # git tag -a -m "테스트" v0.1 master
 	git push [원격저장소별명] [태그이름]  # 원격저장소에 태그를 업로드  # git push origin v0.1
-
-# 4. log
-> * 로그를 조회합니다. 대표적으로 자주 사용하는 조회 형식만 입력하였습니다.
-
-	git log  # 로그 전체 조회
-	git log --oneline  # 로그 전체 간략조회
-	git log --oneline --graph --all # 로그 전체 그래프 조회 (자주사용) (-n1 / -n2 형식을 뒤에 붙이면 최근 몇건만 조회해옵니다.)
-	git log -p -n2  # 최근 두건 수정된 로그의 수정부분 확인(diff)
-
