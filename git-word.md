@@ -71,6 +71,7 @@ git remote -v   # 원격저장소 목록 조회
 > fatal: The current branch master has no upstream branch. 오류가 날 경우 git push -u [원격저장소이름] [브랜치명] 의 명령어로 업스트림 지정
 
 	git push [원격저장소이름] [브랜치명] # 통상 첫번째 원격저장소이름은 origin으로 등록합니다.(remote 할때)
+	git push [원격저장소이름] [로컬브랜치명:원격브랜치명]  # 로컬 브랜치명과 원격 브랜치명이 다를때  # git push origin develop/12345:master_207
 
 ## 2-3. clone / fetch / pull
 > * 원격저장소에서 가져오기
