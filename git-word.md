@@ -1,7 +1,7 @@
 Git 기본 명령어
 ==========
 
-실무에서 바로 사용을 위한 요약
+실무에서 바로 사용을 위한 요약~
 ---------------------------------
 
 ##### 예시 코드는 (예시)라고 달아두었습니다. 해당부분은 설정하신 환경에 맞게 변경해주세요.
@@ -71,7 +71,6 @@ git remote -v   # 원격저장소 목록 조회
 > fatal: The current branch master has no upstream branch. 오류가 날 경우 git push -u [원격저장소이름] [브랜치명] 의 명령어로 업스트림 지정
 
 	git push [원격저장소이름] [브랜치명] # 통상 첫번째 원격저장소이름은 origin으로 등록합니다.(remote 할때)
-	git push [원격저장소이름] [로컬브랜치명:원격브랜치명]  # 로컬 브랜치명과 원격 브랜치명이 다를때  # git push origin develop/12345:master_207
 
 ## 2-3. clone / fetch / pull
 > * 원격저장소에서 가져오기
@@ -141,3 +140,12 @@ git remote -v   # 원격저장소 목록 조회
 
 	git tag -a -m "메세지" [태그이름] [브랜치]  # 주석이 있는 태그생성. 메시지와 태그이름은 필수이고 브랜치명은 생각하면 HEAD에 생성합니다. # git tag -a -m "테스트" v0.1 master
 	git push [원격저장소별명] [태그이름]  # 원격저장소에 태그를 업로드  # git push origin v0.1
+
+# 4. log
+> * 로그를 조회합니다. 대표적으로 자주 사용하는 조회 형식만 입력하였습니다.
+
+	git log  # 로그 전체 조회
+	git log --oneline  # 로그 전체 간략조회
+	git log --oneline --graph --all # 로그 전체 그래프 조회 (자주사용) (-n1 / -n2 형식을 뒤에 붙이면 최근 몇건만 조회해옵니다.)
+	git log -p -n2  # 최근 두건 수정된 로그의 수정부분 확인(diff)
+
